@@ -1,11 +1,9 @@
 import streamlit as st
-import csv
 from pytrends.request import TrendReq
 import pandas as pd
 import time
 import matplotlib.pyplot as plt
 import numpy as np
-import peakutils
 from collections import Counter
 import pytrends
 
