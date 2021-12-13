@@ -20,7 +20,7 @@ st.subheader("Per vedere fino a che giorno sono disponibili i dati sul trend vai
 start_date = str(st.date_input('Start date'))
 end_date = str(st.date_input('End date'))
 st.subheader("ESEMPIO DI FILE CSV DA CARICARE")
-image = Image.open('![image](https://user-images.githubusercontent.com/66023657/145842285-308d18f7-956a-4b9f-95ac-e4df69f7f9a7.png')
+image = Image.open('image')
 st.image(image, caption='Esempio di file CSV da caricare')
 uploaded_file = st.file_uploader(label="carica il tuo set di keywords in formato CSV", type='csv')
 if uploaded_file is not None:
