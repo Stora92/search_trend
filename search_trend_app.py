@@ -58,7 +58,7 @@ if uploaded_file is not None:
           result['months'] = result['Date'].dt.month
           result2 = result.set_index('months')
           result3 = result2.reset_index().groupby('Date').mean().T
-          st.download_button(label="Clicca per Scaricare", data=result3.to_csv(), file_name='text/csv',
+          st.download_button(label="Clicca per Scaricare", data=result3.to_csv(), file_name='Keywords-trend.csv',
                              key='download-csv')
      else:
           result = pd.concat(dataset, axis=1)
@@ -67,7 +67,7 @@ if uploaded_file is not None:
           result['months'] = result['Date'].dt.month
           result2 = result.set_index('months')
           result3 = result2.reset_index().groupby('months').mean().T
-          st.download_button(label="Clicca per Scaricare", data=result3.to_csv(), file_name='text/csv',
+          st.download_button(label="Clicca per Scaricare", data=result3.to_csv(), file_name='Keywords-trend.csv',
                              key='download-csv')
 st.subheader('La mia app ti è stata utile?')
 bottone_si=st.button('Si, molto!')
